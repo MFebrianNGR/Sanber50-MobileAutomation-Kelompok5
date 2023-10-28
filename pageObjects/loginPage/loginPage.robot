@@ -26,6 +26,16 @@ Input Correct Username Wrong Password
     Input Password                       ${password}        ${password_2}
     Click Element                        ${logInButton}
 
+Input Wrong Username Wrong Password
+    Wait Until Element Is Visible        ${username}
+    Input Text                           ${username}        ${username_2}
+    Input Password                       ${password}        ${password_2}
+    Click Element                        ${logInButton}
+
+Input Blank Username Blank Password
+    Wait Until Element Is Visible        ${username}
+    Click Element                        ${logInButton}
+
 Verify Login Page
     Wait Until Element Is Visible        ${verifyLogin}
 
