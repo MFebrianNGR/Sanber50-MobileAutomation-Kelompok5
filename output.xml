@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231028 12:50:49.654" rpa="false" schemaversion="4">
-<suite id="s1" name="Loginpage" source="E:\Bootcamp Sanbercode QA\Sanber-AutomateMobile\suites\loginpage.robot">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231028 13:18:10.792" rpa="false" schemaversion="4">
+<suite id="s1" name="Loginpage" source="E:\Bootcamp Sanbercode QA\Sanber50-MobileAutomation-Kelompok5\suites\loginpage.robot">
 <test id="s1-t1" name="Unsuccessfully Login With Wrong Username And Correct Password" line="22">
 <kw name="Open Flight Application" library="baseApps">
 <kw name="Open Application" library="AppiumLibrary">
@@ -17,322 +17,337 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20231028 12:50:50.142" endtime="20231028 12:51:02.731"/>
+<status status="PASS" starttime="20231028 13:18:11.302" endtime="20231028 13:18:26.057"/>
 </kw>
-<status status="PASS" starttime="20231028 12:50:50.142" endtime="20231028 12:51:02.731"/>
+<status status="PASS" starttime="20231028 13:18:11.301" endtime="20231028 13:18:26.058"/>
 </kw>
 <kw name="Click Button Sign In" library="logInPage">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${signInButton}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:02.739" level="INFO">Clicking element 'com.example.myapplication:id/login'.</msg>
-<msg timestamp="20231028 12:51:03.370" level="INFO">criteria is com.example.myapplication:id/login</msg>
-<status status="PASS" starttime="20231028 12:51:02.733" endtime="20231028 12:51:03.370"/>
+<msg timestamp="20231028 13:18:26.068" level="INFO">Clicking element 'com.example.myapplication:id/login'.</msg>
+<msg timestamp="20231028 13:18:26.671" level="INFO">criteria is com.example.myapplication:id/login</msg>
+<status status="PASS" starttime="20231028 13:18:26.063" endtime="20231028 13:18:26.671"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:02.732" endtime="20231028 12:51:03.370"/>
+<status status="PASS" starttime="20231028 13:18:26.061" endtime="20231028 13:18:26.671"/>
 </kw>
 <kw name="Input Wrong Username Correct Password" library="logInPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${username}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20231028 12:51:04.191" level="INFO">criteria is com.example.myapplication:id/username
+<msg timestamp="20231028 13:18:27.564" level="INFO">criteria is com.example.myapplication:id/username
 criteria is com.example.myapplication:id/username</msg>
-<status status="PASS" starttime="20231028 12:51:03.372" endtime="20231028 12:51:04.192"/>
+<status status="PASS" starttime="20231028 13:18:26.673" endtime="20231028 13:18:27.564"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${username}</arg>
 <arg>${username_2}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:04.194" level="INFO">Typing text '!@support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
-<msg timestamp="20231028 12:51:04.297" level="INFO">criteria is com.example.myapplication:id/username</msg>
-<status status="PASS" starttime="20231028 12:51:04.192" endtime="20231028 12:51:04.297"/>
+<msg timestamp="20231028 13:18:27.569" level="INFO">Typing text '!@support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
+<msg timestamp="20231028 13:18:27.750" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<status status="PASS" starttime="20231028 13:18:27.564" endtime="20231028 13:18:27.750"/>
 </kw>
 <kw name="Input Password" library="AppiumLibrary">
 <arg>${password}</arg>
 <arg>${password_1}</arg>
 <doc>Types the given password into text field identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:04.300" level="INFO">Typing password into text field 'com.example.myapplication:id/password'</msg>
-<msg timestamp="20231028 12:51:04.922" level="INFO">criteria is com.example.myapplication:id/password</msg>
-<status status="PASS" starttime="20231028 12:51:04.297" endtime="20231028 12:51:04.922"/>
+<msg timestamp="20231028 13:18:27.752" level="INFO">Typing password into text field 'com.example.myapplication:id/password'</msg>
+<msg timestamp="20231028 13:18:28.336" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<status status="PASS" starttime="20231028 13:18:27.750" endtime="20231028 13:18:28.337"/>
 </kw>
+<status status="PASS" starttime="20231028 13:18:26.672" endtime="20231028 13:18:28.337"/>
+</kw>
+<kw name="Click Button Login" library="logInPage">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${logInButton}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:04.926" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
-<msg timestamp="20231028 12:51:05.554" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
-<status status="PASS" starttime="20231028 12:51:04.923" endtime="20231028 12:51:05.554"/>
+<msg timestamp="20231028 13:18:28.342" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
+<msg timestamp="20231028 13:18:29.007" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<status status="PASS" starttime="20231028 13:18:28.339" endtime="20231028 13:18:29.007"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:03.371" endtime="20231028 12:51:05.554"/>
+<status status="PASS" starttime="20231028 13:18:28.338" endtime="20231028 13:18:29.007"/>
 </kw>
 <kw name="Verify Failed Login Page Username" library="logInPage">
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <arg>${invalidUsernamePassword}</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20231028 12:51:05.556" endtime="20231028 12:51:05.718"/>
+<status status="PASS" starttime="20231028 13:18:29.009" endtime="20231028 13:18:29.694"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:05.555" endtime="20231028 12:51:05.718"/>
+<status status="PASS" starttime="20231028 13:18:29.008" endtime="20231028 13:18:29.695"/>
 </kw>
-<status status="PASS" starttime="20231028 12:50:50.140" endtime="20231028 12:51:05.719"/>
+<status status="PASS" starttime="20231028 13:18:11.300" endtime="20231028 13:18:29.695"/>
 </test>
-<test id="s1-t2" name="Unsuccessfully Login With Correct Username And Wrong Password" line="28">
+<test id="s1-t2" name="Unsuccessfully Login With Correct Username And Wrong Password" line="29">
 <kw name="Clear Username Password" library="logInPage">
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>${username}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:05.728" level="INFO">Clear text field 'com.example.myapplication:id/username'</msg>
-<msg timestamp="20231028 12:51:06.180" level="INFO">criteria is com.example.myapplication:id/username</msg>
-<status status="PASS" starttime="20231028 12:51:05.723" endtime="20231028 12:51:06.180"/>
+<msg timestamp="20231028 13:18:29.702" level="INFO">Clear text field 'com.example.myapplication:id/username'</msg>
+<msg timestamp="20231028 13:18:29.845" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<status status="PASS" starttime="20231028 13:18:29.698" endtime="20231028 13:18:29.846"/>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>${password}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:06.185" level="INFO">Clear text field 'com.example.myapplication:id/password'</msg>
-<msg timestamp="20231028 12:51:07.272" level="INFO">criteria is com.example.myapplication:id/password</msg>
-<status status="PASS" starttime="20231028 12:51:06.180" endtime="20231028 12:51:07.272"/>
+<msg timestamp="20231028 13:18:29.852" level="INFO">Clear text field 'com.example.myapplication:id/password'</msg>
+<msg timestamp="20231028 13:18:30.434" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<status status="PASS" starttime="20231028 13:18:29.846" endtime="20231028 13:18:30.434"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:05.722" endtime="20231028 12:51:07.273"/>
+<status status="PASS" starttime="20231028 13:18:29.697" endtime="20231028 13:18:30.435"/>
 </kw>
 <kw name="Input Correct Username Wrong Password" library="logInPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${username}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20231028 12:51:07.844" level="INFO">criteria is com.example.myapplication:id/username</msg>
-<status status="PASS" starttime="20231028 12:51:07.274" endtime="20231028 12:51:07.845"/>
+<msg timestamp="20231028 13:18:30.992" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<status status="PASS" starttime="20231028 13:18:30.436" endtime="20231028 13:18:30.992"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${username}</arg>
 <arg>${username_1}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:07.850" level="INFO">Typing text 'support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
-<msg timestamp="20231028 12:51:07.960" level="INFO">criteria is com.example.myapplication:id/username</msg>
-<status status="PASS" starttime="20231028 12:51:07.845" endtime="20231028 12:51:07.961"/>
+<msg timestamp="20231028 13:18:30.994" level="INFO">Typing text 'support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
+<msg timestamp="20231028 13:18:31.106" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<status status="PASS" starttime="20231028 13:18:30.992" endtime="20231028 13:18:31.106"/>
 </kw>
 <kw name="Input Password" library="AppiumLibrary">
 <arg>${password}</arg>
 <arg>${password_2}</arg>
 <doc>Types the given password into text field identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:07.965" level="INFO">Typing password into text field 'com.example.myapplication:id/password'</msg>
-<msg timestamp="20231028 12:51:08.590" level="INFO">criteria is com.example.myapplication:id/password</msg>
-<status status="PASS" starttime="20231028 12:51:07.961" endtime="20231028 12:51:08.590"/>
+<msg timestamp="20231028 13:18:31.108" level="INFO">Typing password into text field 'com.example.myapplication:id/password'</msg>
+<msg timestamp="20231028 13:18:31.681" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<status status="PASS" starttime="20231028 13:18:31.106" endtime="20231028 13:18:31.681"/>
 </kw>
+<status status="PASS" starttime="20231028 13:18:30.435" endtime="20231028 13:18:31.681"/>
+</kw>
+<kw name="Click Button Login" library="logInPage">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${logInButton}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:08.593" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
-<msg timestamp="20231028 12:51:09.223" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
-<status status="PASS" starttime="20231028 12:51:08.590" endtime="20231028 12:51:09.223"/>
+<msg timestamp="20231028 13:18:31.688" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
+<msg timestamp="20231028 13:18:32.304" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<status status="PASS" starttime="20231028 13:18:31.684" endtime="20231028 13:18:32.304"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:07.273" endtime="20231028 12:51:09.223"/>
+<status status="PASS" starttime="20231028 13:18:31.683" endtime="20231028 13:18:32.304"/>
 </kw>
 <kw name="Verify Failed Login Page Username" library="logInPage">
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <arg>${invalidUsernamePassword}</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20231028 12:51:09.225" endtime="20231028 12:51:09.399"/>
+<status status="PASS" starttime="20231028 13:18:32.305" endtime="20231028 13:18:32.467"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:09.224" endtime="20231028 12:51:09.399"/>
+<status status="PASS" starttime="20231028 13:18:32.305" endtime="20231028 13:18:32.467"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:05.721" endtime="20231028 12:51:09.402"/>
+<status status="PASS" starttime="20231028 13:18:29.697" endtime="20231028 13:18:32.468"/>
 </test>
-<test id="s1-t3" name="Unsuccessfully Login With Wrong Username And Wrong Password" line="33">
+<test id="s1-t3" name="Unsuccessfully Login With Wrong Username And Wrong Password" line="35">
 <kw name="Clear Username Password" library="logInPage">
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>${username}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:09.412" level="INFO">Clear text field 'com.example.myapplication:id/username'</msg>
-<msg timestamp="20231028 12:51:09.820" level="INFO">criteria is com.example.myapplication:id/username</msg>
-<status status="PASS" starttime="20231028 12:51:09.406" endtime="20231028 12:51:09.820"/>
+<msg timestamp="20231028 13:18:32.472" level="INFO">Clear text field 'com.example.myapplication:id/username'</msg>
+<msg timestamp="20231028 13:18:32.929" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<status status="PASS" starttime="20231028 13:18:32.471" endtime="20231028 13:18:32.930"/>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>${password}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:09.826" level="INFO">Clear text field 'com.example.myapplication:id/password'</msg>
-<msg timestamp="20231028 12:51:10.399" level="INFO">criteria is com.example.myapplication:id/password</msg>
-<status status="PASS" starttime="20231028 12:51:09.820" endtime="20231028 12:51:10.400"/>
+<msg timestamp="20231028 13:18:32.935" level="INFO">Clear text field 'com.example.myapplication:id/password'</msg>
+<msg timestamp="20231028 13:18:33.709" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<status status="PASS" starttime="20231028 13:18:32.930" endtime="20231028 13:18:33.709"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:09.405" endtime="20231028 12:51:10.400"/>
+<status status="PASS" starttime="20231028 13:18:32.470" endtime="20231028 13:18:33.710"/>
 </kw>
 <kw name="Input Wrong Username Wrong Password" library="logInPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${username}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20231028 12:51:11.282" level="INFO">criteria is com.example.myapplication:id/username</msg>
-<status status="PASS" starttime="20231028 12:51:10.401" endtime="20231028 12:51:11.282"/>
+<msg timestamp="20231028 13:18:34.306" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<status status="PASS" starttime="20231028 13:18:33.711" endtime="20231028 13:18:34.306"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${username}</arg>
 <arg>${username_2}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:11.285" level="INFO">Typing text '!@support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
-<msg timestamp="20231028 12:51:11.379" level="INFO">criteria is com.example.myapplication:id/username</msg>
-<status status="PASS" starttime="20231028 12:51:11.282" endtime="20231028 12:51:11.379"/>
+<msg timestamp="20231028 13:18:34.308" level="INFO">Typing text '!@support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
+<msg timestamp="20231028 13:18:34.426" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<status status="PASS" starttime="20231028 13:18:34.306" endtime="20231028 13:18:34.426"/>
 </kw>
 <kw name="Input Password" library="AppiumLibrary">
 <arg>${password}</arg>
 <arg>${password_2}</arg>
 <doc>Types the given password into text field identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:11.386" level="INFO">Typing password into text field 'com.example.myapplication:id/password'</msg>
-<msg timestamp="20231028 12:51:11.971" level="INFO">criteria is com.example.myapplication:id/password</msg>
-<status status="PASS" starttime="20231028 12:51:11.379" endtime="20231028 12:51:11.971"/>
+<msg timestamp="20231028 13:18:34.429" level="INFO">Typing password into text field 'com.example.myapplication:id/password'</msg>
+<msg timestamp="20231028 13:18:35.053" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<status status="PASS" starttime="20231028 13:18:34.426" endtime="20231028 13:18:35.054"/>
 </kw>
+<status status="PASS" starttime="20231028 13:18:33.710" endtime="20231028 13:18:35.054"/>
+</kw>
+<kw name="Click Button Login" library="logInPage">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${logInButton}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:11.975" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
-<msg timestamp="20231028 12:51:12.571" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
-<status status="PASS" starttime="20231028 12:51:11.971" endtime="20231028 12:51:12.571"/>
+<msg timestamp="20231028 13:18:35.057" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
+<msg timestamp="20231028 13:18:35.695" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<status status="PASS" starttime="20231028 13:18:35.055" endtime="20231028 13:18:35.695"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:10.400" endtime="20231028 12:51:12.571"/>
+<status status="PASS" starttime="20231028 13:18:35.054" endtime="20231028 13:18:35.695"/>
 </kw>
 <kw name="Verify Failed Login Page Username" library="logInPage">
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <arg>${invalidUsernamePassword}</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20231028 12:51:12.572" endtime="20231028 12:51:12.730"/>
+<status status="PASS" starttime="20231028 13:18:35.696" endtime="20231028 13:18:35.798"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:12.572" endtime="20231028 12:51:12.731"/>
+<status status="PASS" starttime="20231028 13:18:35.696" endtime="20231028 13:18:35.799"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:09.404" endtime="20231028 12:51:12.732"/>
+<status status="PASS" starttime="20231028 13:18:32.470" endtime="20231028 13:18:35.800"/>
 </test>
-<test id="s1-t4" name="Unsuccessfully Login With Wrong Username And Wrong Password" line="38">
+<test id="s1-t4" name="Unsuccessfully Login With Blank Username And Blank Password" line="41">
 <kw name="Clear Username Password" library="logInPage">
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>${username}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:12.745" level="INFO">Clear text field 'com.example.myapplication:id/username'</msg>
-<msg timestamp="20231028 12:51:13.202" level="INFO">criteria is com.example.myapplication:id/username</msg>
-<status status="PASS" starttime="20231028 12:51:12.740" endtime="20231028 12:51:13.202"/>
+<msg timestamp="20231028 13:18:35.810" level="INFO">Clear text field 'com.example.myapplication:id/username'</msg>
+<msg timestamp="20231028 13:18:36.306" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<status status="PASS" starttime="20231028 13:18:35.804" endtime="20231028 13:18:36.306"/>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>${password}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:13.205" level="INFO">Clear text field 'com.example.myapplication:id/password'</msg>
-<msg timestamp="20231028 12:51:13.783" level="INFO">criteria is com.example.myapplication:id/password</msg>
-<status status="PASS" starttime="20231028 12:51:13.202" endtime="20231028 12:51:13.783"/>
+<msg timestamp="20231028 13:18:36.308" level="INFO">Clear text field 'com.example.myapplication:id/password'</msg>
+<msg timestamp="20231028 13:18:36.903" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<status status="PASS" starttime="20231028 13:18:36.306" endtime="20231028 13:18:36.903"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:12.739" endtime="20231028 12:51:13.783"/>
+<status status="PASS" starttime="20231028 13:18:35.804" endtime="20231028 13:18:36.903"/>
 </kw>
 <kw name="Input Blank Username Blank Password" library="logInPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${username}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20231028 12:51:14.353" level="INFO">criteria is com.example.myapplication:id/username</msg>
-<status status="PASS" starttime="20231028 12:51:13.784" endtime="20231028 12:51:14.354"/>
+<msg timestamp="20231028 13:18:37.755" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<status status="PASS" starttime="20231028 13:18:36.904" endtime="20231028 13:18:37.755"/>
 </kw>
+<status status="PASS" starttime="20231028 13:18:36.904" endtime="20231028 13:18:37.756"/>
+</kw>
+<kw name="Click Button Login" library="logInPage">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${logInButton}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:14.356" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
-<msg timestamp="20231028 12:51:14.487" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
-<status status="PASS" starttime="20231028 12:51:14.354" endtime="20231028 12:51:14.488"/>
+<msg timestamp="20231028 13:18:37.761" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
+<msg timestamp="20231028 13:18:38.134" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<status status="PASS" starttime="20231028 13:18:37.757" endtime="20231028 13:18:38.134"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:13.784" endtime="20231028 12:51:14.488"/>
+<status status="PASS" starttime="20231028 13:18:37.756" endtime="20231028 13:18:38.134"/>
 </kw>
 <kw name="Verify Failed Login Page Username" library="logInPage">
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <arg>${invalidUsernamePassword}</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20231028 12:51:14.489" endtime="20231028 12:51:15.276"/>
+<status status="PASS" starttime="20231028 13:18:38.135" endtime="20231028 13:18:38.256"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:14.488" endtime="20231028 12:51:15.276"/>
+<status status="PASS" starttime="20231028 13:18:38.135" endtime="20231028 13:18:38.257"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:12.738" endtime="20231028 12:51:15.277"/>
+<status status="PASS" starttime="20231028 13:18:35.802" endtime="20231028 13:18:38.258"/>
 </test>
-<test id="s1-t5" name="Successfully Login Flight Apps" line="43">
+<test id="s1-t5" name="Successfully Login Flight Apps" line="47">
 <kw name="Clear Username Password" library="logInPage">
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>${username}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:15.294" level="INFO">Clear text field 'com.example.myapplication:id/username'</msg>
-<msg timestamp="20231028 12:51:15.388" level="INFO">criteria is com.example.myapplication:id/username</msg>
-<status status="PASS" starttime="20231028 12:51:15.285" endtime="20231028 12:51:15.389"/>
+<msg timestamp="20231028 13:18:38.269" level="INFO">Clear text field 'com.example.myapplication:id/username'</msg>
+<msg timestamp="20231028 13:18:38.781" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<status status="PASS" starttime="20231028 13:18:38.262" endtime="20231028 13:18:38.781"/>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>${password}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:15.393" level="INFO">Clear text field 'com.example.myapplication:id/password'</msg>
-<msg timestamp="20231028 12:51:15.989" level="INFO">criteria is com.example.myapplication:id/password</msg>
-<status status="PASS" starttime="20231028 12:51:15.389" endtime="20231028 12:51:15.989"/>
+<msg timestamp="20231028 13:18:38.787" level="INFO">Clear text field 'com.example.myapplication:id/password'</msg>
+<msg timestamp="20231028 13:18:39.333" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<status status="PASS" starttime="20231028 13:18:38.782" endtime="20231028 13:18:39.334"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:15.283" endtime="20231028 12:51:15.989"/>
+<status status="PASS" starttime="20231028 13:18:38.261" endtime="20231028 13:18:39.334"/>
 </kw>
 <kw name="Input Username Password Correct" library="logInPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${username}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20231028 12:51:16.567" level="INFO">criteria is com.example.myapplication:id/username</msg>
-<status status="PASS" starttime="20231028 12:51:15.990" endtime="20231028 12:51:16.568"/>
+<msg timestamp="20231028 13:18:39.900" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<status status="PASS" starttime="20231028 13:18:39.335" endtime="20231028 13:18:39.900"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${username}</arg>
 <arg>${username_1}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:16.572" level="INFO">Typing text 'support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
-<msg timestamp="20231028 12:51:16.696" level="INFO">criteria is com.example.myapplication:id/username</msg>
-<status status="PASS" starttime="20231028 12:51:16.568" endtime="20231028 12:51:16.696"/>
+<msg timestamp="20231028 13:18:39.904" level="INFO">Typing text 'support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
+<msg timestamp="20231028 13:18:40.034" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<status status="PASS" starttime="20231028 13:18:39.900" endtime="20231028 13:18:40.034"/>
 </kw>
 <kw name="Input Password" library="AppiumLibrary">
 <arg>${password}</arg>
 <arg>${password_1}</arg>
 <doc>Types the given password into text field identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:16.699" level="INFO">Typing password into text field 'com.example.myapplication:id/password'</msg>
-<msg timestamp="20231028 12:51:17.291" level="INFO">criteria is com.example.myapplication:id/password</msg>
-<status status="PASS" starttime="20231028 12:51:16.696" endtime="20231028 12:51:17.291"/>
+<msg timestamp="20231028 13:18:40.037" level="INFO">Typing password into text field 'com.example.myapplication:id/password'</msg>
+<msg timestamp="20231028 13:18:40.608" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<status status="PASS" starttime="20231028 13:18:40.034" endtime="20231028 13:18:40.608"/>
 </kw>
+<status status="PASS" starttime="20231028 13:18:39.335" endtime="20231028 13:18:40.608"/>
+</kw>
+<kw name="Click Button Login" library="logInPage">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${logInButton}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:17.295" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
-<msg timestamp="20231028 12:51:18.309" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
-<status status="PASS" starttime="20231028 12:51:17.291" endtime="20231028 12:51:18.309"/>
+<msg timestamp="20231028 13:18:40.611" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
+<msg timestamp="20231028 13:18:41.232" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<status status="PASS" starttime="20231028 13:18:40.609" endtime="20231028 13:18:41.232"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:15.990" endtime="20231028 12:51:18.309"/>
+<status status="PASS" starttime="20231028 13:18:40.609" endtime="20231028 13:18:41.232"/>
 </kw>
 <kw name="Verify Login Page" library="logInPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${verifyLogin}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20231028 12:51:19.096" level="INFO">criteria is com.example.myapplication:id/textView
+<msg timestamp="20231028 13:18:41.998" level="INFO">criteria is com.example.myapplication:id/textView
 criteria is com.example.myapplication:id/textView</msg>
-<status status="PASS" starttime="20231028 12:51:18.311" endtime="20231028 12:51:19.096"/>
+<status status="PASS" starttime="20231028 13:18:41.233" endtime="20231028 13:18:41.999"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:18.310" endtime="20231028 12:51:19.096"/>
+<status status="PASS" starttime="20231028 13:18:41.233" endtime="20231028 13:18:41.999"/>
 </kw>
 <kw name="Click Button Sign Out" library="logInPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${signOutButton}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20231028 12:51:19.542" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/login"]</msg>
-<status status="PASS" starttime="20231028 12:51:19.097" endtime="20231028 12:51:19.542"/>
+<msg timestamp="20231028 13:18:42.472" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/login"]</msg>
+<status status="PASS" starttime="20231028 13:18:42.000" endtime="20231028 13:18:42.472"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${signOutButton}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231028 12:51:19.545" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.example.myapplication:id/login"]'.</msg>
-<msg timestamp="20231028 12:51:19.676" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/login"]</msg>
-<status status="PASS" starttime="20231028 12:51:19.543" endtime="20231028 12:51:19.676"/>
+<msg timestamp="20231028 13:18:42.474" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.example.myapplication:id/login"]'.</msg>
+<msg timestamp="20231028 13:18:42.612" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/login"]</msg>
+<status status="PASS" starttime="20231028 13:18:42.472" endtime="20231028 13:18:42.612"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:19.097" endtime="20231028 12:51:19.677"/>
+<status status="PASS" starttime="20231028 13:18:42.000" endtime="20231028 13:18:42.613"/>
 </kw>
 <kw name="Verify Home Page" library="logInPage">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${appLogo}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20231028 12:51:20.291" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="com.example.myapplication:id/imageView4"]</msg>
-<status status="PASS" starttime="20231028 12:51:19.678" endtime="20231028 12:51:20.292"/>
+<msg timestamp="20231028 13:18:43.200" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="com.example.myapplication:id/imageView4"]</msg>
+<status status="PASS" starttime="20231028 13:18:42.614" endtime="20231028 13:18:43.200"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:19.677" endtime="20231028 12:51:20.292"/>
+<status status="PASS" starttime="20231028 13:18:42.614" endtime="20231028 13:18:43.200"/>
 </kw>
 <kw name="Close Flight Application" library="baseApps">
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20231028 12:51:20.293" endtime="20231028 12:51:21.013"/>
+<status status="PASS" starttime="20231028 13:18:43.201" endtime="20231028 13:18:43.872"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:20.292" endtime="20231028 12:51:21.014"/>
+<status status="PASS" starttime="20231028 13:18:43.201" endtime="20231028 13:18:43.872"/>
 </kw>
-<status status="PASS" starttime="20231028 12:51:15.282" endtime="20231028 12:51:21.023"/>
+<status status="PASS" starttime="20231028 13:18:38.260" endtime="20231028 13:18:43.874"/>
 </test>
-<status status="PASS" starttime="20231028 12:50:49.657" endtime="20231028 12:51:21.025"/>
+<status status="PASS" starttime="20231028 13:18:10.795" endtime="20231028 13:18:43.877"/>
 </suite>
 <statistics>
 <total>
@@ -345,16 +360,15 @@ criteria is com.example.myapplication:id/textView</msg>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20231028 12:50:50.135" level="ERROR">Error in file 'E:\Bootcamp Sanbercode QA\Sanber-AutomateMobile\pageObjects\logInPage\logInPage.robot' on line 5: Processing variable file '../baseApps.robot' failed: Importing variable file '../baseApps.robot' failed: ModuleNotFoundError: No module named '.'
+<msg timestamp="20231028 13:18:11.295" level="ERROR">Error in file 'E:\Bootcamp Sanbercode QA\Sanber50-MobileAutomation-Kelompok5\pageObjects\logInPage\logInPage.robot' on line 5: Processing variable file '../baseApps.robot' failed: Importing variable file '../baseApps.robot' failed: ModuleNotFoundError: No module named '.'
 Traceback (most recent call last):
   None
 PYTHONPATH:
-  E:\Bootcamp Sanbercode QA\Sanber-AutomateMobile
+  E:\Bootcamp Sanbercode QA\Sanber50-MobileAutomation-Kelompok5
   C:\Users\febrian\AppData\Local\Programs\Python\Python312\python312.zip
   C:\Users\febrian\AppData\Local\Programs\Python\Python312\DLLs
   C:\Users\febrian\AppData\Local\Programs\Python\Python312\Lib
   C:\Users\febrian\AppData\Local\Programs\Python\Python312
   C:\Users\febrian\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
-<msg timestamp="20231028 12:51:12.735" level="WARN">Multiple tests with name 'Unsuccessfully Login With Wrong Username And Wrong Password' executed in suite 'Loginpage'.</msg>
 </errors>
 </robot>

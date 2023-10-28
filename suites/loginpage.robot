@@ -23,26 +23,31 @@ Unsuccessfully Login With Wrong Username And Correct Password
     Open Flight Application
     Click Button Sign In
     Input Wrong Username Correct Password
+    Click Button Login
     Verify Failed Login Page Username
 
 Unsuccessfully Login With Correct Username And Wrong Password
     Clear Username Password
     Input Correct Username Wrong Password
+    Click Button Login
     Verify Failed Login Page Username
 
 Unsuccessfully Login With Wrong Username And Wrong Password
     Clear Username Password
     Input Wrong Username Wrong Password
+    Click Button Login
     Verify Failed Login Page Username
 
 Unsuccessfully Login With Blank Username And Blank Password
     Clear Username Password
     Input Blank Username Blank Password
+    Click Button Login
     Verify Failed Login Page Username
 
 Successfully Login Flight Apps
     Clear Username Password
     Input Username Password Correct
+    Click Button Login
     Verify Login Page
     Click Button Sign Out
     Verify Home Page
