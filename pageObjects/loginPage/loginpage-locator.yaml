@@ -1,0 +1,7 @@
+signInButton: com.example.myapplication:id/login
+username: com.example.myapplication:id/username
+password: com.example.myapplication:id/password
+logInButton: com.example.myapplication:id/signIn
+verifyLogin: com.example.myapplication:id/textView
+signOutButton: //android.widget.Button[@resource-id="com.example.myapplication:id/login"]
+invalidUsernamePassword: Invalid username/password
