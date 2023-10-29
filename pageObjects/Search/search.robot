@@ -1,9 +1,9 @@
 *** Settings ***
-Resource                ../pageObjects/baseApps.robot
+Resource                ../baseApps.robot
 Variables               search.yaml
-Variables               ../loginpage-locator.yaml
+Variables               ../loginPage/loginpage-locator.yaml
 Variables               ../homePage/homepage-locator.yaml
-Variables               ../pageObjects/baseApps.robot
+Variables               ../baseApps.robot
 
 ** Keywords **
 Click Button Sign In
@@ -14,10 +14,17 @@ Input Username Password Correct
     Input Text                           ${username}        ${username_1}
     Input Password                       ${password}        ${password_1}
 
+Click Button Login
+    Click Element                        ${logInButton}
+
+Verify Login Page
+    Wait Until Element Is Visible        ${verifyLogin}
+
 Click Button Search
-    Click Element                        ${buttonSearchPage}
+    Wait Until Element Is Visible        ${buttonSearch}
+    Click Element                        ${buttonSearch}
 
 Search Booking Flight Number
     Wait Until Element Is Visible        ${searchField}
-    Input Booking Flight ID              ${searchField}      ${validbooking}
-    Click Search Button                  ${buttonSearch}
+    Input Text                           ${searchField}          ${validbooking}
+    Click Element                        ${buttonSearchPage}

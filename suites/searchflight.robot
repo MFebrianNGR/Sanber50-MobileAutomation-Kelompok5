@@ -1,7 +1,6 @@
 *** Settings ***
 Resource                ../pageObjects/baseApps.robot
 Resource                ../pageObjects/Search/search.robot
-Variables               ../pageObjects/Search/search.yaml
 
 ** Keywords
 # 1. Membuka Flight Application
@@ -13,18 +12,16 @@ Variables               ../pageObjects/Search/search.yaml
 # 7. Menutup Flight Application
 
 ** Test Cases **
-Successfully Login
+Successfully Login Flight Apps
     Open Flight Application
     Click Button Sign In
-    Input Correct Username Wrong Password
+    Input Username Password Correct
     Click Button Login
+    Verify Login Page
 
-Click Search Button
+Appear Searching Page
     Click Button Search
 
 Searching Flight Number ID
     Search Booking Flight Number
-    Click Search Button
 
-Close Application
-    Close Flight Application

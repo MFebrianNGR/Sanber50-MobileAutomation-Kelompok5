@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on darwin)" generated="20231029 13:08:23.055" rpa="false" schemaversion="4">
-<suite id="s1" name="Searchflight" source="/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/suites/searchflight.robot">
-<test id="s1-t1" name="Successfully Login" line="16">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231029 14:18:28.244" rpa="false" schemaversion="4">
+<suite id="s1" name="Searchflight" source="E:\Bootcamp Sanbercode QA\Sanber50-MobileAutomation-Kelompok5\suites\searchflight.robot">
+<test id="s1-t1" name="Successfully Login Flight Apps" line="15">
 <kw name="Open Flight Application" library="baseApps">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>${REMOTE_URL}</arg>
@@ -17,98 +17,137 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20231029 13:08:23.311" endtime="20231029 13:08:33.665"/>
+<status status="PASS" starttime="20231029 14:18:28.686" endtime="20231029 14:18:40.955"/>
 </kw>
-<status status="PASS" starttime="20231029 13:08:23.310" endtime="20231029 13:08:33.665"/>
+<status status="PASS" starttime="20231029 14:18:28.685" endtime="20231029 14:18:40.955"/>
 </kw>
 <kw name="Click Button Sign In" library="search">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${signInButton}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231029 13:08:33.667" level="FAIL">Variable '${signInButton}' not found.</msg>
-<status status="FAIL" starttime="20231029 13:08:33.666" endtime="20231029 13:08:33.667"/>
+<msg timestamp="20231029 14:18:40.967" level="INFO">Clicking element 'com.example.myapplication:id/login'.</msg>
+<msg timestamp="20231029 14:18:41.562" level="INFO">criteria is com.example.myapplication:id/login</msg>
+<status status="PASS" starttime="20231029 14:18:40.960" endtime="20231029 14:18:41.562"/>
 </kw>
-<status status="FAIL" starttime="20231029 13:08:33.666" endtime="20231029 13:08:33.667"/>
+<status status="PASS" starttime="20231029 14:18:40.958" endtime="20231029 14:18:41.563"/>
 </kw>
-<kw name="Input Correct Username Wrong Password">
-<status status="NOT RUN" starttime="20231029 13:08:33.678" endtime="20231029 13:08:33.678"/>
+<kw name="Input Username Password Correct" library="search">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${username}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231029 14:18:42.637" level="INFO">criteria is com.example.myapplication:id/username
+criteria is com.example.myapplication:id/username</msg>
+<status status="PASS" starttime="20231029 14:18:41.564" endtime="20231029 14:18:42.637"/>
 </kw>
-<kw name="Click Button Login">
-<status status="NOT RUN" starttime="20231029 13:08:33.682" endtime="20231029 13:08:33.682"/>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${username}</arg>
+<arg>${username_1}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20231029 14:18:42.645" level="INFO">Typing text 'support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
+<msg timestamp="20231029 14:18:42.731" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<status status="PASS" starttime="20231029 14:18:42.637" endtime="20231029 14:18:42.731"/>
 </kw>
-<status status="FAIL" starttime="20231029 13:08:23.310" endtime="20231029 13:08:33.683">Variable '${signInButton}' not found.</status>
-</test>
-<test id="s1-t2" name="Click Search Button" line="22">
-<kw name="Click Button Search" library="search">
+<kw name="Input Password" library="AppiumLibrary">
+<arg>${password}</arg>
+<arg>${password_1}</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<msg timestamp="20231029 14:18:42.735" level="INFO">Typing password into text field 'com.example.myapplication:id/password'</msg>
+<msg timestamp="20231029 14:18:43.368" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<status status="PASS" starttime="20231029 14:18:42.731" endtime="20231029 14:18:43.368"/>
+</kw>
+<status status="PASS" starttime="20231029 14:18:41.563" endtime="20231029 14:18:43.368"/>
+</kw>
+<kw name="Click Button Login" library="search">
 <kw name="Click Element" library="AppiumLibrary">
-<arg>${buttonSearchPage}</arg>
+<arg>${logInButton}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231029 13:08:33.688" level="FAIL">Variable '${buttonSearchPage}' not found.</msg>
-<status status="FAIL" starttime="20231029 13:08:33.686" endtime="20231029 13:08:33.688"/>
+<msg timestamp="20231029 14:18:43.371" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
+<msg timestamp="20231029 14:18:44.014" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<status status="PASS" starttime="20231029 14:18:43.369" endtime="20231029 14:18:44.014"/>
 </kw>
-<status status="FAIL" starttime="20231029 13:08:33.686" endtime="20231029 13:08:33.688"/>
+<status status="PASS" starttime="20231029 14:18:43.369" endtime="20231029 14:18:44.014"/>
 </kw>
-<status status="FAIL" starttime="20231029 13:08:33.684" endtime="20231029 13:08:33.689">Variable '${buttonSearchPage}' not found.</status>
+<kw name="Verify Login Page" library="search">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${verifyLogin}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231029 14:18:44.781" level="INFO">criteria is com.example.myapplication:id/textView
+criteria is com.example.myapplication:id/textView</msg>
+<status status="PASS" starttime="20231029 14:18:44.015" endtime="20231029 14:18:44.781"/>
+</kw>
+<status status="PASS" starttime="20231029 14:18:44.015" endtime="20231029 14:18:44.781"/>
+</kw>
+<status status="PASS" starttime="20231029 14:18:28.685" endtime="20231029 14:18:44.783"/>
+</test>
+<test id="s1-t2" name="Appear Searching Page" line="22">
+<kw name="Click Button Search" library="search">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${buttonSearch}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231029 14:18:44.931" level="INFO">criteria is com.example.myapplication:id/search_flight</msg>
+<status status="PASS" starttime="20231029 14:18:44.788" endtime="20231029 14:18:44.932"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${buttonSearch}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231029 14:18:44.936" level="INFO">Clicking element 'com.example.myapplication:id/search_flight'.</msg>
+<msg timestamp="20231029 14:18:45.093" level="INFO">criteria is com.example.myapplication:id/search_flight</msg>
+<status status="PASS" starttime="20231029 14:18:44.932" endtime="20231029 14:18:45.093"/>
+</kw>
+<status status="PASS" starttime="20231029 14:18:44.787" endtime="20231029 14:18:45.093"/>
+</kw>
+<status status="PASS" starttime="20231029 14:18:44.786" endtime="20231029 14:18:45.094"/>
 </test>
 <test id="s1-t3" name="Searching Flight Number ID" line="25">
 <kw name="Search Booking Flight Number" library="search">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${searchField}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20231029 13:08:33.695" level="FAIL">Variable '${searchField}' not found.</msg>
-<status status="FAIL" starttime="20231029 13:08:33.693" endtime="20231029 13:08:33.695"/>
+<msg timestamp="20231029 14:18:46.015" level="INFO">criteria is com.example.myapplication:id/flight_number
+criteria is com.example.myapplication:id/flight_number</msg>
+<status status="PASS" starttime="20231029 14:18:45.097" endtime="20231029 14:18:46.016"/>
 </kw>
-<kw name="Input Booking Flight ID">
+<kw name="Input Text" library="AppiumLibrary">
 <arg>${searchField}</arg>
 <arg>${validbooking}</arg>
-<status status="NOT RUN" starttime="20231029 13:08:33.701" endtime="20231029 13:08:33.701"/>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20231029 14:18:46.020" level="INFO">Typing text 'DA935' into text field 'com.example.myapplication:id/flight_number'</msg>
+<msg timestamp="20231029 14:18:46.785" level="INFO">criteria is com.example.myapplication:id/flight_number</msg>
+<status status="PASS" starttime="20231029 14:18:46.016" endtime="20231029 14:18:46.786"/>
 </kw>
-<kw name="Click Search Button">
-<arg>${buttonSearch}</arg>
-<status status="NOT RUN" starttime="20231029 13:08:33.706" endtime="20231029 13:08:33.706"/>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${buttonSearchPage}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231029 14:18:46.789" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]'.</msg>
+<msg timestamp="20231029 14:18:47.732" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]</msg>
+<status status="PASS" starttime="20231029 14:18:46.786" endtime="20231029 14:18:47.732"/>
 </kw>
-<status status="FAIL" starttime="20231029 13:08:33.692" endtime="20231029 13:08:33.707"/>
+<status status="PASS" starttime="20231029 14:18:45.096" endtime="20231029 14:18:47.732"/>
 </kw>
-<kw name="Click Search Button">
-<status status="NOT RUN" starttime="20231029 13:08:33.715" endtime="20231029 13:08:33.715"/>
-</kw>
-<status status="FAIL" starttime="20231029 13:08:33.691" endtime="20231029 13:08:33.716">Variable '${searchField}' not found.</status>
+<status status="PASS" starttime="20231029 14:18:45.096" endtime="20231029 14:18:47.733"/>
 </test>
-<test id="s1-t4" name="Close Application" line="29">
-<kw name="Close Flight Application" library="baseApps">
-<kw name="Close Application" library="AppiumLibrary">
-<doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20231029 13:08:33.718" endtime="20231029 13:08:34.515"/>
-</kw>
-<status status="PASS" starttime="20231029 13:08:33.717" endtime="20231029 13:08:34.515"/>
-</kw>
-<status status="PASS" starttime="20231029 13:08:33.716" endtime="20231029 13:08:34.515"/>
-</test>
-<status status="FAIL" starttime="20231029 13:08:23.056" endtime="20231029 13:08:34.516"/>
+<status status="PASS" starttime="20231029 14:18:28.250" endtime="20231029 14:18:47.736"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="3" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="3" skip="0" id="s1" name="Searchflight">Searchflight</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="Searchflight">Searchflight</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20231029 13:08:23.307" level="ERROR">Error in file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/Search/search.robot' on line 2: Resource file '../pageObjects/baseApps.robot' does not exist.</msg>
-<msg timestamp="20231029 13:08:23.307" level="ERROR">Error in file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/Search/search.robot' on line 3: Processing variable file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/Search/search.yaml' failed: Using YAML variable files requires PyYAML module to be installed. Typically you can install it by running `pip install pyyaml`.</msg>
-<msg timestamp="20231029 13:08:23.308" level="ERROR">Error in file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/Search/search.robot' on line 4: Variable file '../loginpage-locator.yaml' does not exist.</msg>
-<msg timestamp="20231029 13:08:23.308" level="ERROR">Error in file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/Search/search.robot' on line 5: Processing variable file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/homePage/homepage-locator.yaml' failed: Using YAML variable files requires PyYAML module to be installed. Typically you can install it by running `pip install pyyaml`.</msg>
-<msg timestamp="20231029 13:08:23.309" level="ERROR">Error in file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/Search/search.robot' on line 6: Processing variable file '../pageObjects/baseApps.robot' failed: Importing variable file '../pageObjects/baseApps.robot' failed: ModuleNotFoundError: No module named '.'
+<msg timestamp="20231029 14:18:28.680" level="ERROR">Error in file 'E:\Bootcamp Sanbercode QA\Sanber50-MobileAutomation-Kelompok5\pageObjects\Search\search.robot' on line 6: Processing variable file '../baseApps.robot' failed: Importing variable file '../baseApps.robot' failed: ModuleNotFoundError: No module named '.'
 Traceback (most recent call last):
   None
 PYTHONPATH:
-  /Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5
-  /Library/Frameworks/Python.framework/Versions/3.12/lib/python312.zip
-  /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12
-  /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/lib-dynload
-  /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages</msg>
+  E:\Bootcamp Sanbercode QA\Sanber50-MobileAutomation-Kelompok5
+  C:\Users\febrian\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\febrian\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\febrian\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\febrian\AppData\Local\Programs\Python\Python312
+  C:\Users\febrian\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
 </errors>
 </robot>

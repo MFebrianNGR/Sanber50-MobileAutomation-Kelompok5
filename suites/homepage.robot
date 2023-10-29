@@ -12,5 +12,5 @@ Resource            ../pageObjects/homePage/homePage.robot
 Successfully Open Flight Home Page
     Open Flight Application
     Verify Homepage Appears
-    Verify Sign In Button in Homepage
+    Verify Text Homepage
     Close Flight Application

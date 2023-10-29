@@ -8,6 +8,6 @@ Verify Homepage Appears
     Wait Until Element Is Visible    ${signInButton}
     Wait Until Element Is Visible    ${searchButton}
     Wait Until Element Is Visible    ${checkinButton}
-Verify User Success to login
+Verify Text Homepage
     Wait Until Element Is Visible      ${username_homepage}
 
