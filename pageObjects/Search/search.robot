@@ -28,3 +28,6 @@ Search Booking Flight Number
     Wait Until Element Is Visible        ${searchField}
     Input Text                           ${searchField}          ${validbooking}
     Click Element                        ${buttonSearchPage}
+
+Appears Valid Code
+    Wait Until Element Is Visible         ${validCode}

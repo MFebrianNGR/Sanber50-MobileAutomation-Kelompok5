@@ -12,16 +12,12 @@ Resource                ../pageObjects/Search/search.robot
 # 7. Menutup Flight Application
 
 ** Test Cases **
-Successfully Login Flight Apps
+Search Booking Flight
     Open Flight Application
     Click Button Sign In
     Input Username Password Correct
     Click Button Login
     Verify Login Page
-
-Appear Searching Page
     Click Button Search
-
-Searching Flight Number ID
     Search Booking Flight Number
-
+    Appears Valid Code

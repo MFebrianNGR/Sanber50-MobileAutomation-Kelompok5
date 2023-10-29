@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231029 14:18:28.244" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231029 14:33:49.792" rpa="false" schemaversion="4">
 <suite id="s1" name="Searchflight" source="E:\Bootcamp Sanbercode QA\Sanber50-MobileAutomation-Kelompok5\suites\searchflight.robot">
-<test id="s1-t1" name="Successfully Login Flight Apps" line="15">
+<test id="s1-t1" name="Search Booking Flight" line="15">
 <kw name="Open Flight Application" library="baseApps">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>${REMOTE_URL}</arg>
@@ -17,129 +17,133 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20231029 14:18:28.686" endtime="20231029 14:18:40.955"/>
+<status status="PASS" starttime="20231029 14:33:50.213" endtime="20231029 14:34:02.579"/>
 </kw>
-<status status="PASS" starttime="20231029 14:18:28.685" endtime="20231029 14:18:40.955"/>
+<status status="PASS" starttime="20231029 14:33:50.213" endtime="20231029 14:34:02.580"/>
 </kw>
 <kw name="Click Button Sign In" library="search">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${signInButton}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231029 14:18:40.967" level="INFO">Clicking element 'com.example.myapplication:id/login'.</msg>
-<msg timestamp="20231029 14:18:41.562" level="INFO">criteria is com.example.myapplication:id/login</msg>
-<status status="PASS" starttime="20231029 14:18:40.960" endtime="20231029 14:18:41.562"/>
+<msg timestamp="20231029 14:34:02.587" level="INFO">Clicking element 'com.example.myapplication:id/login'.</msg>
+<msg timestamp="20231029 14:34:03.197" level="INFO">criteria is com.example.myapplication:id/login</msg>
+<status status="PASS" starttime="20231029 14:34:02.581" endtime="20231029 14:34:03.197"/>
 </kw>
-<status status="PASS" starttime="20231029 14:18:40.958" endtime="20231029 14:18:41.563"/>
+<status status="PASS" starttime="20231029 14:34:02.580" endtime="20231029 14:34:03.197"/>
 </kw>
 <kw name="Input Username Password Correct" library="search">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${username}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20231029 14:18:42.637" level="INFO">criteria is com.example.myapplication:id/username
+<msg timestamp="20231029 14:34:03.999" level="INFO">criteria is com.example.myapplication:id/username
 criteria is com.example.myapplication:id/username</msg>
-<status status="PASS" starttime="20231029 14:18:41.564" endtime="20231029 14:18:42.637"/>
+<status status="PASS" starttime="20231029 14:34:03.198" endtime="20231029 14:34:03.999"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${username}</arg>
 <arg>${username_1}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20231029 14:18:42.645" level="INFO">Typing text 'support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
-<msg timestamp="20231029 14:18:42.731" level="INFO">criteria is com.example.myapplication:id/username</msg>
-<status status="PASS" starttime="20231029 14:18:42.637" endtime="20231029 14:18:42.731"/>
+<msg timestamp="20231029 14:34:04.003" level="INFO">Typing text 'support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
+<msg timestamp="20231029 14:34:04.091" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<status status="PASS" starttime="20231029 14:34:03.999" endtime="20231029 14:34:04.091"/>
 </kw>
 <kw name="Input Password" library="AppiumLibrary">
 <arg>${password}</arg>
 <arg>${password_1}</arg>
 <doc>Types the given password into text field identified by `locator`.</doc>
-<msg timestamp="20231029 14:18:42.735" level="INFO">Typing password into text field 'com.example.myapplication:id/password'</msg>
-<msg timestamp="20231029 14:18:43.368" level="INFO">criteria is com.example.myapplication:id/password</msg>
-<status status="PASS" starttime="20231029 14:18:42.731" endtime="20231029 14:18:43.368"/>
+<msg timestamp="20231029 14:34:04.095" level="INFO">Typing password into text field 'com.example.myapplication:id/password'</msg>
+<msg timestamp="20231029 14:34:04.638" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<status status="PASS" starttime="20231029 14:34:04.091" endtime="20231029 14:34:04.638"/>
 </kw>
-<status status="PASS" starttime="20231029 14:18:41.563" endtime="20231029 14:18:43.368"/>
+<status status="PASS" starttime="20231029 14:34:03.198" endtime="20231029 14:34:04.638"/>
 </kw>
 <kw name="Click Button Login" library="search">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${logInButton}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231029 14:18:43.371" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
-<msg timestamp="20231029 14:18:44.014" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
-<status status="PASS" starttime="20231029 14:18:43.369" endtime="20231029 14:18:44.014"/>
+<msg timestamp="20231029 14:34:04.642" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
+<msg timestamp="20231029 14:34:05.267" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<status status="PASS" starttime="20231029 14:34:04.639" endtime="20231029 14:34:05.267"/>
 </kw>
-<status status="PASS" starttime="20231029 14:18:43.369" endtime="20231029 14:18:44.014"/>
+<status status="PASS" starttime="20231029 14:34:04.639" endtime="20231029 14:34:05.268"/>
 </kw>
 <kw name="Verify Login Page" library="search">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${verifyLogin}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20231029 14:18:44.781" level="INFO">criteria is com.example.myapplication:id/textView
+<msg timestamp="20231029 14:34:06.290" level="INFO">criteria is com.example.myapplication:id/textView
 criteria is com.example.myapplication:id/textView</msg>
-<status status="PASS" starttime="20231029 14:18:44.015" endtime="20231029 14:18:44.781"/>
+<status status="PASS" starttime="20231029 14:34:05.270" endtime="20231029 14:34:06.290"/>
 </kw>
-<status status="PASS" starttime="20231029 14:18:44.015" endtime="20231029 14:18:44.781"/>
+<status status="PASS" starttime="20231029 14:34:05.269" endtime="20231029 14:34:06.291"/>
 </kw>
-<status status="PASS" starttime="20231029 14:18:28.685" endtime="20231029 14:18:44.783"/>
-</test>
-<test id="s1-t2" name="Appear Searching Page" line="22">
 <kw name="Click Button Search" library="search">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${buttonSearch}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20231029 14:18:44.931" level="INFO">criteria is com.example.myapplication:id/search_flight</msg>
-<status status="PASS" starttime="20231029 14:18:44.788" endtime="20231029 14:18:44.932"/>
+<msg timestamp="20231029 14:34:06.397" level="INFO">criteria is com.example.myapplication:id/search_flight</msg>
+<status status="PASS" starttime="20231029 14:34:06.292" endtime="20231029 14:34:06.397"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${buttonSearch}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231029 14:18:44.936" level="INFO">Clicking element 'com.example.myapplication:id/search_flight'.</msg>
-<msg timestamp="20231029 14:18:45.093" level="INFO">criteria is com.example.myapplication:id/search_flight</msg>
-<status status="PASS" starttime="20231029 14:18:44.932" endtime="20231029 14:18:45.093"/>
+<msg timestamp="20231029 14:34:06.400" level="INFO">Clicking element 'com.example.myapplication:id/search_flight'.</msg>
+<msg timestamp="20231029 14:34:06.556" level="INFO">criteria is com.example.myapplication:id/search_flight</msg>
+<status status="PASS" starttime="20231029 14:34:06.397" endtime="20231029 14:34:06.556"/>
 </kw>
-<status status="PASS" starttime="20231029 14:18:44.787" endtime="20231029 14:18:45.093"/>
+<status status="PASS" starttime="20231029 14:34:06.291" endtime="20231029 14:34:06.556"/>
 </kw>
-<status status="PASS" starttime="20231029 14:18:44.786" endtime="20231029 14:18:45.094"/>
-</test>
-<test id="s1-t3" name="Searching Flight Number ID" line="25">
 <kw name="Search Booking Flight Number" library="search">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${searchField}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20231029 14:18:46.015" level="INFO">criteria is com.example.myapplication:id/flight_number
+<msg timestamp="20231029 14:34:07.507" level="INFO">criteria is com.example.myapplication:id/flight_number
 criteria is com.example.myapplication:id/flight_number</msg>
-<status status="PASS" starttime="20231029 14:18:45.097" endtime="20231029 14:18:46.016"/>
+<status status="PASS" starttime="20231029 14:34:06.557" endtime="20231029 14:34:07.507"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${searchField}</arg>
 <arg>${validbooking}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20231029 14:18:46.020" level="INFO">Typing text 'DA935' into text field 'com.example.myapplication:id/flight_number'</msg>
-<msg timestamp="20231029 14:18:46.785" level="INFO">criteria is com.example.myapplication:id/flight_number</msg>
-<status status="PASS" starttime="20231029 14:18:46.016" endtime="20231029 14:18:46.786"/>
+<msg timestamp="20231029 14:34:07.513" level="INFO">Typing text 'DA935' into text field 'com.example.myapplication:id/flight_number'</msg>
+<msg timestamp="20231029 14:34:07.677" level="INFO">criteria is com.example.myapplication:id/flight_number</msg>
+<status status="PASS" starttime="20231029 14:34:07.508" endtime="20231029 14:34:07.677"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${buttonSearchPage}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231029 14:18:46.789" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]'.</msg>
-<msg timestamp="20231029 14:18:47.732" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]</msg>
-<status status="PASS" starttime="20231029 14:18:46.786" endtime="20231029 14:18:47.732"/>
+<msg timestamp="20231029 14:34:07.680" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]'.</msg>
+<msg timestamp="20231029 14:34:08.716" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/searchFlight"]</msg>
+<status status="PASS" starttime="20231029 14:34:07.677" endtime="20231029 14:34:08.716"/>
 </kw>
-<status status="PASS" starttime="20231029 14:18:45.096" endtime="20231029 14:18:47.732"/>
+<status status="PASS" starttime="20231029 14:34:06.557" endtime="20231029 14:34:08.716"/>
 </kw>
-<status status="PASS" starttime="20231029 14:18:45.096" endtime="20231029 14:18:47.733"/>
+<kw name="Appears Valid Code" library="search">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${validCode}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231029 14:34:09.557" level="INFO">xpath criteria: //android.widget.TextView[@text="DA 935"]
+xpath criteria: //android.widget.TextView[@text="DA 935"]</msg>
+<status status="PASS" starttime="20231029 14:34:08.718" endtime="20231029 14:34:09.557"/>
+</kw>
+<status status="PASS" starttime="20231029 14:34:08.717" endtime="20231029 14:34:09.557"/>
+</kw>
+<status status="PASS" starttime="20231029 14:33:50.212" endtime="20231029 14:34:09.559"/>
 </test>
-<status status="PASS" starttime="20231029 14:18:28.250" endtime="20231029 14:18:47.736"/>
+<status status="PASS" starttime="20231029 14:33:49.795" endtime="20231029 14:34:09.564"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Searchflight">Searchflight</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Searchflight">Searchflight</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20231029 14:18:28.680" level="ERROR">Error in file 'E:\Bootcamp Sanbercode QA\Sanber50-MobileAutomation-Kelompok5\pageObjects\Search\search.robot' on line 6: Processing variable file '../baseApps.robot' failed: Importing variable file '../baseApps.robot' failed: ModuleNotFoundError: No module named '.'
+<msg timestamp="20231029 14:33:50.207" level="ERROR">Error in file 'E:\Bootcamp Sanbercode QA\Sanber50-MobileAutomation-Kelompok5\pageObjects\Search\search.robot' on line 6: Processing variable file '../baseApps.robot' failed: Importing variable file '../baseApps.robot' failed: ModuleNotFoundError: No module named '.'
 Traceback (most recent call last):
   None
 PYTHONPATH:
