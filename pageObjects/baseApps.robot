@@ -9,6 +9,7 @@ ${username_1}               support@ngendigital.com
 ${password_1}               abc123
 ${username_2}               !@support@ngendigital.com
 ${password_2}               bcd123
+${validbooking}             DA935
 
 
 *** Keywords ***

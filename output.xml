@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.0 on darwin)" generated="20231029 09:43:21.746" rpa="false" schemaversion="4">
-<suite id="s1" name="Loginpage" source="/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/suites/loginpage.robot">
-<test id="s1-t1" name="Unsuccessfully Login With Wrong Username And Correct Password" line="22">
+<robot generator="Robot 6.1.1 (Python 3.12.0 on darwin)" generated="20231029 13:08:23.055" rpa="false" schemaversion="4">
+<suite id="s1" name="Searchflight" source="/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/suites/searchflight.robot">
+<test id="s1-t1" name="Successfully Login" line="16">
 <kw name="Open Flight Application" library="baseApps">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>${REMOTE_URL}</arg>
@@ -17,175 +17,91 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20231029 09:43:21.909" endtime="20231029 09:43:31.562"/>
+<status status="PASS" starttime="20231029 13:08:23.311" endtime="20231029 13:08:33.665"/>
 </kw>
-<status status="PASS" starttime="20231029 09:43:21.909" endtime="20231029 09:43:31.562"/>
+<status status="PASS" starttime="20231029 13:08:23.310" endtime="20231029 13:08:33.665"/>
 </kw>
-<kw name="Click Button Sign In" library="logInPage">
+<kw name="Click Button Sign In" library="search">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${signInButton}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20231029 09:43:31.568" level="FAIL">Variable '${signInButton}' not found.</msg>
-<status status="FAIL" starttime="20231029 09:43:31.566" endtime="20231029 09:43:31.569"/>
+<msg timestamp="20231029 13:08:33.667" level="FAIL">Variable '${signInButton}' not found.</msg>
+<status status="FAIL" starttime="20231029 13:08:33.666" endtime="20231029 13:08:33.667"/>
 </kw>
-<status status="FAIL" starttime="20231029 09:43:31.564" endtime="20231029 09:43:31.571"/>
+<status status="FAIL" starttime="20231029 13:08:33.666" endtime="20231029 13:08:33.667"/>
 </kw>
-<kw name="Input Wrong Username Correct Password" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.571" endtime="20231029 09:43:31.572"/>
+<kw name="Input Correct Username Wrong Password">
+<status status="NOT RUN" starttime="20231029 13:08:33.678" endtime="20231029 13:08:33.678"/>
 </kw>
-<kw name="Click Button Login" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.572" endtime="20231029 09:43:31.572"/>
+<kw name="Click Button Login">
+<status status="NOT RUN" starttime="20231029 13:08:33.682" endtime="20231029 13:08:33.682"/>
 </kw>
-<kw name="Verify Failed Login Page Username" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.572" endtime="20231029 09:43:31.572"/>
-</kw>
-<status status="FAIL" starttime="20231029 09:43:21.908" endtime="20231029 09:43:31.572">Variable '${signInButton}' not found.</status>
+<status status="FAIL" starttime="20231029 13:08:23.310" endtime="20231029 13:08:33.683">Variable '${signInButton}' not found.</status>
 </test>
-<test id="s1-t2" name="Unsuccessfully Login With Correct Username And Wrong Password" line="29">
-<kw name="Clear Username Password" library="logInPage">
-<kw name="Clear Text" library="AppiumLibrary">
-<arg>${username}</arg>
-<doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20231029 09:43:31.577" level="FAIL">Variable '${username}' not found. Did you mean:
-    ${username_2}
-    ${username_1}</msg>
-<status status="FAIL" starttime="20231029 09:43:31.575" endtime="20231029 09:43:31.578"/>
+<test id="s1-t2" name="Click Search Button" line="22">
+<kw name="Click Button Search" library="search">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${buttonSearchPage}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231029 13:08:33.688" level="FAIL">Variable '${buttonSearchPage}' not found.</msg>
+<status status="FAIL" starttime="20231029 13:08:33.686" endtime="20231029 13:08:33.688"/>
 </kw>
-<kw name="Clear Text" library="AppiumLibrary">
-<arg>${password}</arg>
-<doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" starttime="20231029 09:43:31.578" endtime="20231029 09:43:31.578"/>
+<status status="FAIL" starttime="20231029 13:08:33.686" endtime="20231029 13:08:33.688"/>
 </kw>
-<status status="FAIL" starttime="20231029 09:43:31.574" endtime="20231029 09:43:31.578"/>
-</kw>
-<kw name="Input Correct Username Wrong Password" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.578" endtime="20231029 09:43:31.578"/>
-</kw>
-<kw name="Click Button Login" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.578" endtime="20231029 09:43:31.578"/>
-</kw>
-<kw name="Verify Failed Login Page Username" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.578" endtime="20231029 09:43:31.578"/>
-</kw>
-<status status="FAIL" starttime="20231029 09:43:31.573" endtime="20231029 09:43:31.578">Variable '${username}' not found. Did you mean:
-    ${username_2}
-    ${username_1}</status>
+<status status="FAIL" starttime="20231029 13:08:33.684" endtime="20231029 13:08:33.689">Variable '${buttonSearchPage}' not found.</status>
 </test>
-<test id="s1-t3" name="Unsuccessfully Login With Wrong Username And Wrong Password" line="35">
-<kw name="Clear Username Password" library="logInPage">
-<kw name="Clear Text" library="AppiumLibrary">
-<arg>${username}</arg>
-<doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20231029 09:43:31.580" level="FAIL">Variable '${username}' not found. Did you mean:
-    ${username_2}
-    ${username_1}</msg>
-<status status="FAIL" starttime="20231029 09:43:31.579" endtime="20231029 09:43:31.580"/>
+<test id="s1-t3" name="Searching Flight Number ID" line="25">
+<kw name="Search Booking Flight Number" library="search">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${searchField}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231029 13:08:33.695" level="FAIL">Variable '${searchField}' not found.</msg>
+<status status="FAIL" starttime="20231029 13:08:33.693" endtime="20231029 13:08:33.695"/>
 </kw>
-<kw name="Clear Text" library="AppiumLibrary">
-<arg>${password}</arg>
-<doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" starttime="20231029 09:43:31.581" endtime="20231029 09:43:31.581"/>
+<kw name="Input Booking Flight ID">
+<arg>${searchField}</arg>
+<arg>${validbooking}</arg>
+<status status="NOT RUN" starttime="20231029 13:08:33.701" endtime="20231029 13:08:33.701"/>
 </kw>
-<status status="FAIL" starttime="20231029 09:43:31.579" endtime="20231029 09:43:31.581"/>
+<kw name="Click Search Button">
+<arg>${buttonSearch}</arg>
+<status status="NOT RUN" starttime="20231029 13:08:33.706" endtime="20231029 13:08:33.706"/>
 </kw>
-<kw name="Input Wrong Username Wrong Password" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.581" endtime="20231029 09:43:31.581"/>
+<status status="FAIL" starttime="20231029 13:08:33.692" endtime="20231029 13:08:33.707"/>
 </kw>
-<kw name="Click Button Login" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.581" endtime="20231029 09:43:31.581"/>
+<kw name="Click Search Button">
+<status status="NOT RUN" starttime="20231029 13:08:33.715" endtime="20231029 13:08:33.715"/>
 </kw>
-<kw name="Verify Failed Login Page Username" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.581" endtime="20231029 09:43:31.581"/>
-</kw>
-<status status="FAIL" starttime="20231029 09:43:31.579" endtime="20231029 09:43:31.581">Variable '${username}' not found. Did you mean:
-    ${username_2}
-    ${username_1}</status>
+<status status="FAIL" starttime="20231029 13:08:33.691" endtime="20231029 13:08:33.716">Variable '${searchField}' not found.</status>
 </test>
-<test id="s1-t4" name="Unsuccessfully Login With Blank Username And Blank Password" line="41">
-<kw name="Clear Username Password" library="logInPage">
-<kw name="Clear Text" library="AppiumLibrary">
-<arg>${username}</arg>
-<doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20231029 09:43:31.587" level="FAIL">Variable '${username}' not found. Did you mean:
-    ${username_2}
-    ${username_1}</msg>
-<status status="FAIL" starttime="20231029 09:43:31.583" endtime="20231029 09:43:31.588"/>
-</kw>
-<kw name="Clear Text" library="AppiumLibrary">
-<arg>${password}</arg>
-<doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" starttime="20231029 09:43:31.588" endtime="20231029 09:43:31.589"/>
-</kw>
-<status status="FAIL" starttime="20231029 09:43:31.582" endtime="20231029 09:43:31.589"/>
-</kw>
-<kw name="Input Blank Username Blank Password" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.589" endtime="20231029 09:43:31.589"/>
-</kw>
-<kw name="Click Button Login" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.590" endtime="20231029 09:43:31.590"/>
-</kw>
-<kw name="Verify Failed Login Page Username" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.590" endtime="20231029 09:43:31.590"/>
-</kw>
-<status status="FAIL" starttime="20231029 09:43:31.582" endtime="20231029 09:43:31.590">Variable '${username}' not found. Did you mean:
-    ${username_2}
-    ${username_1}</status>
-</test>
-<test id="s1-t5" name="Successfully Login Flight Apps" line="47">
-<kw name="Clear Username Password" library="logInPage">
-<kw name="Clear Text" library="AppiumLibrary">
-<arg>${username}</arg>
-<doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20231029 09:43:31.594" level="FAIL">Variable '${username}' not found. Did you mean:
-    ${username_2}
-    ${username_1}</msg>
-<status status="FAIL" starttime="20231029 09:43:31.593" endtime="20231029 09:43:31.594"/>
-</kw>
-<kw name="Clear Text" library="AppiumLibrary">
-<arg>${password}</arg>
-<doc>Clears the text field identified by `locator`.</doc>
-<status status="NOT RUN" starttime="20231029 09:43:31.594" endtime="20231029 09:43:31.594"/>
-</kw>
-<status status="FAIL" starttime="20231029 09:43:31.592" endtime="20231029 09:43:31.594"/>
-</kw>
-<kw name="Input Username Password Correct" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.594" endtime="20231029 09:43:31.594"/>
-</kw>
-<kw name="Click Button Login" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.594" endtime="20231029 09:43:31.594"/>
-</kw>
-<kw name="Verify Login Page" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.595" endtime="20231029 09:43:31.595"/>
-</kw>
-<kw name="Click Button Sign Out" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.595" endtime="20231029 09:43:31.595"/>
-</kw>
-<kw name="Verify Home Page" library="logInPage">
-<status status="NOT RUN" starttime="20231029 09:43:31.595" endtime="20231029 09:43:31.595"/>
-</kw>
+<test id="s1-t4" name="Close Application" line="29">
 <kw name="Close Flight Application" library="baseApps">
-<status status="NOT RUN" starttime="20231029 09:43:31.595" endtime="20231029 09:43:31.595"/>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20231029 13:08:33.718" endtime="20231029 13:08:34.515"/>
 </kw>
-<status status="FAIL" starttime="20231029 09:43:31.591" endtime="20231029 09:43:31.595">Variable '${username}' not found. Did you mean:
-    ${username_2}
-    ${username_1}</status>
+<status status="PASS" starttime="20231029 13:08:33.717" endtime="20231029 13:08:34.515"/>
+</kw>
+<status status="PASS" starttime="20231029 13:08:33.716" endtime="20231029 13:08:34.515"/>
 </test>
-<status status="FAIL" starttime="20231029 09:43:21.748" endtime="20231029 09:43:31.596"/>
+<status status="FAIL" starttime="20231029 13:08:23.056" endtime="20231029 13:08:34.516"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="5" skip="0">All Tests</stat>
+<stat pass="1" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="5" skip="0" id="s1" name="Loginpage">Loginpage</stat>
+<stat pass="1" fail="3" skip="0" id="s1" name="Searchflight">Searchflight</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20231029 09:43:21.905" level="ERROR">Error in file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/logInPage/logInPage.robot' on line 3: Processing variable file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/logInPage/loginpage-locator.yaml' failed: Using YAML variable files requires PyYAML module to be installed. Typically you can install it by running `pip install pyyaml`.</msg>
-<msg timestamp="20231029 09:43:21.906" level="ERROR">Error in file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/logInPage/logInPage.robot' on line 4: Processing variable file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/homePage/homepage-locator.yaml' failed: Using YAML variable files requires PyYAML module to be installed. Typically you can install it by running `pip install pyyaml`.</msg>
-<msg timestamp="20231029 09:43:21.907" level="ERROR">Error in file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/logInPage/logInPage.robot' on line 5: Processing variable file '../baseApps.robot' failed: Importing variable file '../baseApps.robot' failed: ModuleNotFoundError: No module named '.'
+<msg timestamp="20231029 13:08:23.307" level="ERROR">Error in file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/Search/search.robot' on line 2: Resource file '../pageObjects/baseApps.robot' does not exist.</msg>
+<msg timestamp="20231029 13:08:23.307" level="ERROR">Error in file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/Search/search.robot' on line 3: Processing variable file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/Search/search.yaml' failed: Using YAML variable files requires PyYAML module to be installed. Typically you can install it by running `pip install pyyaml`.</msg>
+<msg timestamp="20231029 13:08:23.308" level="ERROR">Error in file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/Search/search.robot' on line 4: Variable file '../loginpage-locator.yaml' does not exist.</msg>
+<msg timestamp="20231029 13:08:23.308" level="ERROR">Error in file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/Search/search.robot' on line 5: Processing variable file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/homePage/homepage-locator.yaml' failed: Using YAML variable files requires PyYAML module to be installed. Typically you can install it by running `pip install pyyaml`.</msg>
+<msg timestamp="20231029 13:08:23.309" level="ERROR">Error in file '/Users/rayhan/Documents/Project/QA/kelompok5-mobileAutomation/Sanber50-MobileAutomation-Kelompok5/pageObjects/Search/search.robot' on line 6: Processing variable file '../pageObjects/baseApps.robot' failed: Importing variable file '../pageObjects/baseApps.robot' failed: ModuleNotFoundError: No module named '.'
 Traceback (most recent call last):
   None
 PYTHONPATH:

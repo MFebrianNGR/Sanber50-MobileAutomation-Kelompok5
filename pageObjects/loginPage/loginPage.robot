@@ -12,7 +12,7 @@ Input Username Password Correct
     Wait Until Element Is Visible        ${username}
     Input Text                           ${username}        ${username_1}
     Input Password                       ${password}        ${password_1}
-
+                                                            
 Input Wrong Username Correct Password
     Wait Until Element Is Visible        ${username}
     Input Text                           ${username}        ${username_2}
