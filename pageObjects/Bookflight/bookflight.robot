@@ -20,6 +20,6 @@ Click Button Login
 Verify Login Page
     Wait Until Element Is Visible        ${verifyLogin}
 
-Click Button Search
-    Wait Until Element Is Visible        ${buttonSearch}
-    Click Element                        ${buttonSearch}
+Click Button Book
+    Wait Until Element Is Visible        ${bookButton}
+    Click Element                        ${bookButton}
