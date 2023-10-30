@@ -2,4 +2,5 @@ appLogo:  //android.widget.ImageView[@resource-id="com.example.myapplication:id/
 spinnerForm:  //android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerFrom"]
 spinnerTo: //android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerFrom"]
 spinnerClass:  //android.widget.Spinner[@resource-id="com.example.myapplication:id/spinnerClass"]
-bookButton:  //android.widget.Button[@resource-id="com.example.myapplication:id/book_flight"]
+bookFlightButton:  //android.widget.Button[@resource-id="com.example.myapplication:id/book_flight"]
+
